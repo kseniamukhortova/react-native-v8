@@ -6,7 +6,8 @@ source $(dirname $0)/env.sh
 ######################################################################################
 
 rm -rf $BUILD_DIR
-git clone --depth=1 --branch ${RN_VERSION} https://github.com/facebook/react-native.git $BUILD_DIR
+#git clone --depth=1 --branch ${RN_VERSION} https://github.com/facebook/react-native.git $BUILD_DIR
+git clone --depth=1 --branch v0.61.2-robo2 https://github.com/kseniamukhortova/react-native.git $BUILD_DIR
 
 PATCHSET=(
   # Patch React Native build to support v8runtime
